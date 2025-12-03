@@ -19,9 +19,7 @@ export default function Hackathons() {
         life by a group of motivated and passionate individuals.
       </p>
 
-      {/* Hackathon Cards */}
       <div className="flex flex-col gap-4 sm:gap-6">
-        {/* Card 1 */}
         <div className="relative border border-gray-700 hover:bg-gray-800/50 rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-blue-800/50 transition-all duration-500 hover:-translate-y-2 backdrop-blur-sm">
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-r to-transparent blur-2xl -z-10" />
           <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mb-2 sm:mb-4">
@@ -50,7 +48,6 @@ export default function Hackathons() {
           </div>
         </div>
 
-        {/* Card 2 */}
         <div className="relative border border-gray-700 hover:bg-gray-800/50 rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-blue-800/50 transition-all duration-500 hover:-translate-y-2 backdrop-blur-sm">
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-r to-transparent blur-2xl -z-10" />
           <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mb-2 sm:mb-4">
@@ -79,7 +76,6 @@ export default function Hackathons() {
           </div>
         </div>
 
-        {/* Card 3 */}
         <div className="relative border border-gray-700 hover:bg-gray-800/50 rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-blue-800/50 transition-all duration-500 hover:-translate-y-2 backdrop-blur-sm">
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-r to-transparent blur-2xl -z-10" />
           <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mb-2 sm:mb-4">

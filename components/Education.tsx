@@ -36,12 +36,10 @@ export default function Education() {
             transition={{ duration: 0.6 }}
           >
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 md:p-8 items-start">
-              {/* Icon Tile */}
               <div className="w-16 h-16 rounded-xl bg-gray-800/70 backdrop-blur-lg flex items-center justify-center text-3xl shadow-md border border-white/10 group-hover:scale-110 transition-transform duration-300">
                 {edu.icon}
               </div>
 
-              {/* Text */}
               <div className="flex flex-col">
                 <h3 className="text-xl md:text-2xl font-semibold text-white">
                   {edu.title}

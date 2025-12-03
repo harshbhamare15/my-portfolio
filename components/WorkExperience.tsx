@@ -8,14 +8,14 @@ export default function WorkExperience() {
       role: "Student Ambassador",
       duration: "Jul 2024 - Present",
       description:
-        "Represented MetaApply as a Student Ambassador, promoting global education opportunities, organizing campus outreach programs, and supporting student engagement initiatives.",
+        "Representing MetaApply by promoting global education opportunities, conducting campus outreach, and helping students understand international study programs. I support brand awareness on campus and assist students in exploring scholarships and global academic pathways.",
     },
     {
       company: "Edu-Versity",
       role: "Student Ambassador",
       duration: "Nov 2024 - Present",
       description:
-        "Represented Edu-Versity as a Student Ambassador, promoting online learning opportunities, fostering student engagement, and supporting educational and tech-driven campus events.",
+        "Engaging students in Edu-Versity’s learning initiatives, organizing awareness activities, and guiding them toward useful educational resources. I help increase student participation and support campus-level communication efforts.",
     },
   ];
 
