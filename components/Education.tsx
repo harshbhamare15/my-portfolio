@@ -1,56 +1,66 @@
-"use client";
+import React from "react";
 
-import { motion } from "framer-motion";
+interface Education {
+  logo: string;
+  institution: string;
+  degree: string;
+  period: string;
+}
 
-const educationData = [
+const educations: Education[] = [
   {
-    icon: "🎓",
-    title: "B.Tech - Computer Science Engineering",
-    subtitle: "Parul Institute of Technology",
+    logo: "https://i.pinimg.com/736x/fa/14/04/fa140427b70b227ecc7d1a7ba253cef9.jpg",
+    institution: "Parul University",
+    degree: "B.Tech - Computer Science Engineering",
     period: "2024 - 2028",
   },
   {
-    icon: "🏫",
-    title:
+    logo: "SG",
+    institution:
       "Smt. P.A.S Sarvajanik Marathi Highschool and A.M. Vhora Junior College",
-    subtitle: "Higher Secondary Education, PCMB",
+    degree: "Higher Secondary Education, PCMB",
     period: "2023",
   },
 ];
 
 export default function Education() {
   return (
-    <section id="education" className="max-w-7xl mx-auto px-4 sm:px-6 md:px-14 py-2">
-      <h2 className="text-5xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 drop-shadow-lg tracking-wide text-center sm:text-left">
-        Education
-      </h2>
-
-      <div className="space-y-6 sm:space-y-10">
-        {educationData.map((edu, index) => (
-          <motion.div
-            key={index}
-            className="relative group hover:bg-gray-800/50 rounded-2xl border border-gray-700 overflow-hidden shadow-lg transition-all duration-300"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 md:p-8 items-start">
-              <div className="w-16 h-16 rounded-xl bg-gray-800/70 backdrop-blur-lg flex items-center justify-center text-3xl shadow-md border border-white/10 group-hover:scale-110 transition-transform duration-300">
-                {edu.icon}
+    <section className="max-w-2xl mx-auto px-6 py-15">
+      <h2 className="text-2xl font-bold text-black mb-6">Education</h2>
+      <div className="space-y-6">
+        {educations.map((edu, idx) => (
+          <div key={idx} className="flex items-start justify-between gap-4">
+            {/* Left: logo + info */}
+            <div className="flex items-start gap-4">
+              <div
+                className={`w-15 h-15 rounded-full border border-gray-200 flex items-center justify-center flex-shrink-0 ${
+                  edu.logo.startsWith("http")
+                    ? "bg-white overflow-hidden"
+                    : "bg-gray-100 text-xs font-bold text-gray-500"
+                }`}
+              >
+                {edu.logo.startsWith("http") ? (
+                  <img
+                    src={edu.logo}
+                    alt={edu.institution}
+                    className="w-full h-full object-contain"
+                  />
+                ) : (
+                  edu.logo
+                )}
               </div>
-
-              <div className="flex flex-col">
-                <h3 className="text-xl md:text-2xl font-semibold text-white">
-                  {edu.title}
-                </h3>
-                <p className="text-gray-300 mt-2">{edu.subtitle}</p>
-                <span className="text-blue-300 text-sm font-medium mt-2">
-                  {edu.period}
-                </span>
+              <div>
+                <p className="text-base font-semibold text-black">
+                  {edu.institution}
+                </p>
+                <p className="text-sm text-gray-900">{edu.degree}</p>
               </div>
             </div>
-          </motion.div>
+            {/* Right: period */}
+            <span className="text-sm text-gray-500 whitespace-nowrap">
+              {edu.period}
+            </span>
+          </div>
         ))}
       </div>
     </section>

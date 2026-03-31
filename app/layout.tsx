@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Harsh Bhamare | Portfolio",
+  title: "Harsh Bhamare",
   description:
     "Frontend Developer Harsh Bhamare — Building modern web experiences with React & Next.js.",
 };

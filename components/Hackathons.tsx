@@ -1,108 +1,134 @@
-"use client";
+import React from "react";
 
-export default function Hackathons() {
+interface Hackathon {
+  logo: string;
+  logoBg: string;
+  name: string;
+  period: string;
+  location: string;
+  description: string;
+  tags: string[];
+  sourceUrl?: string;
+  websiteUrl?: string;
+}
+
+const hackathons: Hackathon[] = [
+  {
+    logo: "◉",
+    logoBg: "bg-green-700 text-white",
+    name: "Cardano Hackathon Asia - IBW Edition, Bengaluru",
+    period: "Nov 29th - Nov 30th, 2025",
+    location: "Offline",
+    description:
+      "Shortlisted for the Cardano Hackathon Asia 2025 – IBW Edition. Being selected among talented builders is a proud moment and motivates me to continue exploring blockchain innovations.",
+    tags: ["Blockchain", "Cardano Ecosystem"],
+  },
+  {
+    logo: "◉",
+    logoBg: "bg-amber-300 text-white",
+    name: "Google Cloud Agentic AI, Bengaluru",
+    period: "Aug 2025",
+    location: "Offline",
+    description:
+      "Participated in Google Cloud Agentic AI Day, powered by Hack2skill, proposing an AI-driven solution. Gained insights into Google Cloud, Agentic AI, and collaboration on cloud-based innovations.",
+    tags: ["AI Agents", "Cloud-based Innovation"],
+  },
+  {
+    logo: "◉",
+    logoBg: "bg-sky-500 text-white",
+    name: "AIML Hackathon",
+    period: "May 24th - May 26th, 2025",
+    location: "Offline",
+    description:
+      "Participated in an AI-powered product innovation challenge in 2024, focusing on developing intelligent solutions for real-world problems using machine learning and automation.",
+    tags: ["AI & ML", "Innovation", "Web App"],
+  },
+];
+
+export default function Hackathon() {
   return (
-    <section
-      id="hackathons"
-      className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-0 sm:my-20 py-2"
-    >
-      <h2 className="text-5xl font-extrabold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 drop-shadow-lg tracking-wide text-center sm:text-left">
-        Hackathon
-      </h2>
-      <h3 className="text-gray-400 text-base sm:text-lg text-center mb-2">
-        I 💗 building things
-      </h3>
-      <p className="text-gray-400 text-sm sm:text-lg text-center mb-8 leading-relaxed">
-        During my time in university, I attended 3 hackathons. People from
-        around the country would come together and build incredible things in 2
-        –3 days. It was eye-opening to see the endless possibilities brought to
-        life by a group of motivated and passionate individuals.
-      </p>
+    <section className="max-w-2xl mx-auto px-6 py-8">
+      {/* Header */}
+      <div className="text-center mb-12">
+        <span className="inline-block bg-black text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+          Hackathons
+        </span>
+        <h2 className="text-5xl font-black text-black leading-tight mb-4">
+          I ❤️ building things
+        </h2>
+        <p className="text-gray-700 text-base max-w-lg mx-auto leading-relaxed">
+          During my time in university, I attended 3 hackathons. People from
+          around the country would come together and build incredible things in
+          2 –3 days. It was eye-opening to see the endless possibilities brought
+          to life by a group of motivated and passionate individuals.
+        </p>
+      </div>
 
-      <div className="flex flex-col gap-4 sm:gap-6">
-        <div className="relative border border-gray-700 hover:bg-gray-800/50 rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-blue-800/50 transition-all duration-500 hover:-translate-y-2 backdrop-blur-sm">
-          <div className="absolute inset-0 rounded-2xl bg-gradient-to-r to-transparent blur-2xl -z-10" />
-          <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mb-2 sm:mb-4">
-            May 24th - May 26th, 2025
-          </p>
-          <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 sm:mb-3">
-            AIML Hackathon @ Parul University
-          </h3>
-          <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mb-4">
-            Offline
-            <br />
-            Participated in an AI-powered product innovation challenge in 2024,
-            focusing on developing intelligent solutions for real-world problems
-            using machine learning and automation.
-          </p>
-          <div className="flex flex-wrap items-center gap-1 xs:gap-2 sm:gap-3">
-            <span className="text-xs sm:text-sm bg-blue-500/10 text-blue-400 border border-blue-500/30 px-3 py-1 rounded-full">
-              AI & ML
-            </span>
-            <span className="text-xs sm:text-sm bg-purple-500/10 text-purple-400 border border-purple-500/30 px-3 py-1 rounded-full">
-              Innovation
-            </span>
-            <span className="text-xs sm:text-sm bg-pink-500/10 text-pink-400 border border-pink-500/30 px-3 py-1 rounded-full">
-              2025
-            </span>
-          </div>
-        </div>
+      {/* Hackathon List */}
+      <div className="space-y-0">
+        {hackathons.map((h, idx) => (
+          <div key={idx}>
+            <div className="flex gap-4 py-6">
+              {/* Logo */}
+              <div
+                className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 ${h.logoBg}`}
+              >
+                {h.logo}
+              </div>
 
-        <div className="relative border border-gray-700 hover:bg-gray-800/50 rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-blue-800/50 transition-all duration-500 hover:-translate-y-2 backdrop-blur-sm">
-          <div className="absolute inset-0 rounded-2xl bg-gradient-to-r to-transparent blur-2xl -z-10" />
-          <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mb-2 sm:mb-4">
-            Aug 2025
-          </p>
-          <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 sm:mb-3">
-            Google Cloud Agentic AI, Bengaluru
-          </h3>
-          <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mb-4">
-            Offline
-            <br />
-            Participated in Google Cloud Agentic AI Day, powered by Hack2skill,
-            proposing an AI-driven solution. Gained insights into Google Cloud,
-            Agentic AI, and collaboration on cloud-based innovations.
-          </p>
-          <div className="flex flex-wrap items-center gap-1 xs:gap-2 sm:gap-3">
-            <span className="text-xs sm:text-sm bg-blue-500/10 text-blue-400 border border-blue-500/30 px-3 py-1 rounded-full">
-              AI Agents
-            </span>
-            <span className="text-xs sm:text-sm bg-purple-500/10 text-purple-400 border border-purple-500/30 px-3 py-1 rounded-full">
-              Cloud-based Innovation
-            </span>
-            <span className="text-xs sm:text-sm bg-pink-500/10 text-pink-400 border border-pink-500/30 px-3 py-1 rounded-full">
-              2025
-            </span>
-          </div>
-        </div>
+              {/* Content */}
+              <div className="flex-1">
+                <p className="text-xs text-gray-400 mb-0.5">{h.period}</p>
+                <h3 className="text-base font-bold text-black mb-0.5">
+                  {h.name}
+                </h3>
+                <p className="text-sm text-gray-500 mb-2">{h.location}</p>
+                <p className="text-sm text-gray-700 leading-relaxed mb-3">
+                  {h.description}
+                </p>
 
-        <div className="relative border border-gray-700 hover:bg-gray-800/50 rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-blue-800/50 transition-all duration-500 hover:-translate-y-2 backdrop-blur-sm">
-          <div className="absolute inset-0 rounded-2xl bg-gradient-to-r to-transparent blur-2xl -z-10" />
-          <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mb-2 sm:mb-4">
-            Nov 29th - Nov 30th, 2025
-          </p>
-          <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 sm:mb-3">
-            Cardano Hackathon Asia - IBW Edition, Bengaluru
-          </h3>
-          <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mb-4">
-            Offline
-            <br />
-            Shortlisted for the Cardano Hackathon Asia 2025 – IBW Edition. Being
-            selected among talented builders is a proud moment and motivates me
-            to continue exploring blockchain innovations.
-          </p>
-          <div className="flex flex-wrap items-center gap-1 xs:gap-2 sm:gap-3">
-            <span className="text-xs sm:text-sm bg-blue-500/10 text-blue-400 border border-blue-500/30 px-3 py-1 rounded-full">
-              Blockchain
-            </span>
-            <span className="text-xs sm:text-sm bg-purple-500/10 text-purple-400 border border-purple-500/30 px-3 py-1 rounded-full">
-              Cardano Ecosystem
-            </span>
-            <span className="text-xs sm:text-sm bg-pink-500/10 text-pink-400 border border-pink-500/30 px-3 py-1 rounded-full">
-              2025
-            </span>
+                {/* Tags */}
+                <div className="flex flex-wrap gap-1.5 mb-3">
+                  {h.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs bg-gray-100 text-gray-600 px-2.5 py-1 rounded-full border border-gray-200"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Buttons — only show if url exists */}
+                {(h.sourceUrl || h.websiteUrl) && (
+                  <div className="flex gap-2">
+                    {h.sourceUrl && (
+                      <a
+                        href={h.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 bg-black text-white text-xs font-medium px-3 py-1.5 rounded-lg hover:bg-gray-800 transition-colors"
+                      >
+                        ⚡ Source
+                      </a>
+                    )}
+                    {h.websiteUrl && (
+                      <a
+                        href={h.websiteUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 bg-black text-white text-xs font-medium px-3 py-1.5 rounded-lg hover:bg-gray-800 transition-colors"
+                      >
+                        🌐 Website
+                      </a>
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
+            {idx < hackathons.length - 1 && <hr className="border-gray-200" />}
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );

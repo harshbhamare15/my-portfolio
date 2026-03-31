@@ -11,7 +11,7 @@ import Contact from "@/components/Contact";
 const page = () => {
   return (
     <>
-    <main className="space-y-28 px-6 md:px-16 py-12">
+    <main>
       <Hero />
       <WorkExperience />
       <Education />
