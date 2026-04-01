@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Home, Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Home, Github, Linkedin, Twitter, Instagram, Link } from "lucide-react";
 
 export default function Navbar() {
   const [mounted, setMounted] = useState(false);
@@ -44,14 +44,14 @@ export default function Navbar() {
   return (
     <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-white/80 backdrop-blur-md border border-gray-200 shadow-lg rounded-full px-6 py-3 flex items-center justify-center gap-5 transition-all">
       {/* Home */}
-      <a
+      <Link
         href="/"
         className={`hover:scale-110 transition-transform ${
           activeSection === "hero" ? "text-black" : "text-gray-400"
         }`}
       >
         <Home className="w-5 h-5" />
-      </a>
+      </Link>
 
       <div className="w-[1px] h-5 bg-gray-300" />
 
