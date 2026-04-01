@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section className="max-w-2xl mx-auto px-6 pb-22 text-center">
+    <section className="max-w-2xl mx-auto px-6 py-5 pb-30 text-center">
       {/* Badge */}
       <span className="inline-block bg-black text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
         Contact
