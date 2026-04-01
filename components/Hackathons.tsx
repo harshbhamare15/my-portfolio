@@ -18,7 +18,7 @@ const hackathons: Hackathon[] = [
     logoBg: "bg-green-700 text-white",
     name: "Cardano Hackathon Asia - IBW Edition, Bengaluru",
     period: "Nov 29th - Nov 30th, 2025",
-    location: "Offline",
+    location: "Bengaluru, India",
     description:
       "Shortlisted for the Cardano Hackathon Asia 2025 – IBW Edition. Being selected among talented builders is a proud moment and motivates me to continue exploring blockchain innovations.",
     tags: ["Blockchain", "Cardano Ecosystem"],
@@ -28,7 +28,7 @@ const hackathons: Hackathon[] = [
     logoBg: "bg-amber-300 text-white",
     name: "Google Cloud Agentic AI, Bengaluru",
     period: "Aug 2025",
-    location: "Offline",
+    location: "Bengaluru, India",
     description:
       "Participated in Google Cloud Agentic AI Day, powered by Hack2skill, proposing an AI-driven solution. Gained insights into Google Cloud, Agentic AI, and collaboration on cloud-based innovations.",
     tags: ["AI Agents", "Cloud-based Innovation"],
@@ -38,7 +38,7 @@ const hackathons: Hackathon[] = [
     logoBg: "bg-sky-500 text-white",
     name: "AIML Hackathon",
     period: "May 24th - May 26th, 2025",
-    location: "Offline",
+    location: "Vadodara, India",
     description:
       "Participated in an AI-powered product innovation challenge in 2024, focusing on developing intelligent solutions for real-world problems using machine learning and automation.",
     tags: ["AI & ML", "Innovation", "Web App"],
@@ -54,9 +54,9 @@ export default function Hackathon() {
           Hackathons
         </span>
         <h2 className="text-5xl font-black text-black leading-tight mb-4">
-          I ❤️ building things
+          I <span className="text-[#7C3AED]">♥</span> building things
         </h2>
-        <p className="text-gray-700 text-base max-w-lg mx-auto leading-relaxed">
+        <p className="text-gray-500 text-base max-w-xl mx-auto">
           During my time in university, I attended 3 hackathons. People from
           around the country would come together and build incredible things in
           2 –3 days. It was eye-opening to see the endless possibilities brought
@@ -78,11 +78,11 @@ export default function Hackathon() {
 
               {/* Content */}
               <div className="flex-1">
-                <p className="text-xs text-gray-400 mb-0.5">{h.period}</p>
+                <p className="text-xs text-gray-600 mb-0.5">{h.period}</p>
                 <h3 className="text-base font-bold text-black mb-0.5">
                   {h.name}
                 </h3>
-                <p className="text-sm text-gray-500 mb-2">{h.location}</p>
+                <p className="text-sm text-gray-600 mb-2">{h.location}</p>
                 <p className="text-sm text-gray-700 leading-relaxed mb-3">
                   {h.description}
                 </p>
@@ -92,7 +92,7 @@ export default function Hackathon() {
                   {h.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-xs bg-gray-100 text-gray-600 px-2.5 py-1 rounded-full border border-gray-200"
+                      className="text-xs bg-gray-100 text-black px-2.5 py-1 rounded-full border border-gray-200"
                     >
                       {tag}
                     </span>

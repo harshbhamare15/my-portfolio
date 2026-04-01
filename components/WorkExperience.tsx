@@ -38,8 +38,8 @@ export default function WorkExperience() {
         {experiences.map((exp, idx) => (
           <div key={idx} className="flex items-center justify-between gap-4">
             {/* Left: logo + info */}
-            <div className="flex items-center gap-4">
-              <div className="w-15 h-15 rounded-full overflow-hidden flex-shrink-0 relative bg-white">
+            <div className="flex items-center gap-2">
+              <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 relative bg-white">
                 <Image
                   src={exp.logo}
                   alt={exp.company}

@@ -33,7 +33,7 @@ export default function Education() {
             {/* Left: logo + info */}
             <div className="flex items-start gap-4">
               <div
-                className={`w-15 h-15 rounded-full border border-gray-200 flex items-center justify-center flex-shrink-0 ${
+                className={`w-14 h-14 rounded-full border border-gray-200 flex items-center justify-center flex-shrink-0 ${
                   edu.logo.startsWith("http")
                     ? "bg-white overflow-hidden"
                     : "bg-gray-100 text-xs font-bold text-gray-500"
