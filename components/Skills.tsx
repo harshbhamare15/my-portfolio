@@ -16,7 +16,7 @@ export default function Skills() {
     <section className="max-w-2xl mx-auto px-6 py-2">
       <h2 className="text-2xl font-bold text-black mb-4">Skills</h2>
 
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
         {skills.map((skill) => (
           <span
             key={skill}
