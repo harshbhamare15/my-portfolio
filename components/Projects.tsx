@@ -21,8 +21,16 @@ const projects: Project[] = [
     period: "February 2024 - March 2024",
     description: (
       <>
-        A simple and efficient task management web app that allows users to add,
-        edit, and delete tasks with a clean, user-friendly interface.
+        A simple and efficient{" "}
+        <span className="text-black underline">
+          task management web application
+        </span>{" "}
+        that enables users to easily add, edit, and delete tasks in an organized
+        manner. The app is designed with a clean and user-friendly interface,
+        ensuring a smooth and intuitive experience for users of all levels. It
+        helps users stay productive by managing their daily tasks effectively,
+        providing a seamless workflow and a clutter-free environment for better
+        focus and task tracking.
       </>
     ),
     tags: ["JavaScript", "React"],
@@ -34,8 +42,15 @@ const projects: Project[] = [
     period: "February 2024 - March 2024",
     description: (
       <>
-        A fun and interactive game built with JavaScript that measures your
-        reaction time and helps improve focus and reflex speed.
+        A fun and{" "}
+        <span className="text-black underline">
+          interactive game built with JavaScript
+        </span>{" "}
+        that measures the user’s reaction time and helps improve focus and
+        reflex speed. It features a simple and user-friendly interface, making
+        it easy to play while providing an engaging and responsive experience.
+        The game allows users to test their speed, stay focused, and gradually
+        improve their performance through repeated attempts.
       </>
     ),
     tags: ["JavaScript", "Game UI", "Web App"],
@@ -47,8 +62,15 @@ const projects: Project[] = [
     period: "February 2024 - March 2024",
     description: (
       <>
-        A modern Spotify-inspired music streaming interface with playlist
-        management, interactive controls, and a clean responsive layout.
+        A modern{" "}
+        <span className="text-black underline">
+          Spotify-inspired music streaming interface
+        </span>{" "}
+        that offers playlist management, interactive controls, and a clean,
+        responsive layout. It is designed to provide a smooth and user-friendly
+        experience, allowing users to easily browse, manage, and play music. The
+        interface ensures seamless navigation and an engaging design, making
+        music interaction simple and enjoyable across different devices.
       </>
     ),
     tags: ["HTML", "CSS", "JavaScript"],
@@ -60,8 +82,13 @@ const projects: Project[] = [
     period: "February 2024 - March 2024",
     description: (
       <>
-        A responsive Netflix-inspired web app built using HTML, CSS, and
-        JavaScript, featuring a sleek UI and dynamic movie browsing experience.
+        A responsive{" "}
+        <span className="text-black underline">Netflix-inspired web app</span>{" "}
+        built using HTML, CSS, and JavaScript, featuring a sleek UI and dynamic
+        movie browsing experience. It offers a clean and user-friendly
+        interface, allowing users to explore content easily with smooth
+        navigation. The design ensures a consistent and enjoyable experience
+        across different devices and screen sizes.
       </>
     ),
     tags: ["HTML", "CSS", "Responsive Design"],

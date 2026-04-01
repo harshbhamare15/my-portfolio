@@ -20,7 +20,7 @@ const hackathons: Hackathon[] = [
     period: "Nov 29th - Nov 30th, 2025",
     location: "Bengaluru, India",
     description:
-      "Shortlisted for the Cardano Hackathon Asia 2025 – IBW Edition. Being selected among talented builders is a proud moment and motivates me to continue exploring blockchain innovations.",
+      "Shortlisted for the Cardano Hackathon Asia 2025 – IBW Edition. Being selected among talented builders is a proud moment and motivates me to continue exploring blockchain innovations. This achievement reflects my growing interest in emerging technologies and encourages me to further enhance my skills while contributing to innovative and impactful solutions in the blockchain space.",
     tags: ["Blockchain", "Cardano Ecosystem"],
   },
   {
@@ -30,7 +30,7 @@ const hackathons: Hackathon[] = [
     period: "Aug 2025",
     location: "Bengaluru, India",
     description:
-      "Participated in Google Cloud Agentic AI Day, powered by Hack2skill, proposing an AI-driven solution. Gained insights into Google Cloud, Agentic AI, and collaboration on cloud-based innovations.",
+      "Participated in Google Cloud Agentic AI Day, powered by Hack2skill, proposing an AI-driven solution. Gained insights into Google Cloud, Agentic AI, and collaboration on cloud-based innovations. This experience enhanced my understanding of real-world AI applications and strengthened my ability to work on innovative, cloud-based solutions in a collaborative environment.",
     tags: ["AI Agents", "Cloud-based Innovation"],
   },
   {
@@ -40,7 +40,7 @@ const hackathons: Hackathon[] = [
     period: "May 24th - May 26th, 2025",
     location: "Vadodara, India",
     description:
-      "Participated in an AI-powered product innovation challenge in 2024, focusing on developing intelligent solutions for real-world problems using machine learning and automation.",
+      "Participated in an AI-powered product innovation challenge in 2024, focusing on developing intelligent solutions for real-world problems using machine learning and automation. This experience helped strengthen my problem-solving skills and deepened my understanding of building practical, scalable AI-driven solutions.",
     tags: ["AI & ML", "Innovation", "Web App"],
   },
 ];
