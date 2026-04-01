@@ -53,7 +53,7 @@ export default function Hackathon() {
         <span className="inline-block bg-black text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
           Hackathons
         </span>
-        <h2 className="text-5xl font-black text-black leading-tight mb-4">
+        <h2 className="text-6xl font-stretch-1000% text-black leading-tight mb-4">
           I <span className="text-[#7C3AED]">♥</span> building things
         </h2>
         <p className="text-gray-500 text-base max-w-xl mx-auto">
