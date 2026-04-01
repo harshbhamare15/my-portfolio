@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Home, Github, Linkedin, Twitter, Instagram, Link } from "lucide-react";
+import { Home, Github, Linkedin, Twitter, Instagram,} from "lucide-react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [mounted, setMounted] = useState(false);
