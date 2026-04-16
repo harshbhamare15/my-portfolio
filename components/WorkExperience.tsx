@@ -12,16 +12,22 @@ interface WorkExp {
 
 const experiences: WorkExp[] = [
   {
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqll6jzIAisUzaf5adiziHyMb07RGn62Khvw&s",
+    company: "Deloitte",
+    role: "Technical Consultant",
+    period: "Mar 2026",
+  },
+  {
     logo: "https://yt3.googleusercontent.com/gCHepjodxvjcAXhiHzvNa5l_h7Xn5ghVeKGE6rTBy_XcyXDe-yEhyAK74HolUOmh-jVdp-NaeVE=s900-c-k-c0x00ffffff-no-rj",
     company: "Edu-Versity ",
     role: "Campus Ambassador",
-    period: "Nov 2024 - Present",
+    period: "Nov 2024",
   },
   {
     logo: "https://play-lh.googleusercontent.com/gZefyvQfHc1_c72CMMTuK2wF4MPkIRI7h86hbHyATMbszohKNQXzwbv3s08kiV0k2rY",
     company: "MetaApply",
     role: "Student Ambassador",
-    period: "Jul 2024 - Present",
+    period: "Jul 2024",
   },
 ];
 
