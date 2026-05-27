@@ -32,12 +32,12 @@ export default function Hero() {
           I am a fresher, A passionate Frontend Developer and a second-year
           engineering student. I have completed my journey in frontend
           development, mastering JavaScript and modern frameworks like{" "}
-          <span className="text-black underline">React.js and Next.js</span> for building
-          dynamic and responsive web applications. I&apos;m deeply enthusiastic about
-          technology and its power to create impactful digital experiences. As I
-          continue to grow in this field, I&apos;m eager to explore new technologies,
-          enhance my skills, and contribute to innovative projects that make a
-          difference.
+          <span className="text-black underline">React.js and Next.js</span>{" "}for
+          building dynamic and responsive web applications. I&apos;m deeply
+          enthusiastic about technology and its power to create impactful
+          digital experiences. As I continue to grow in this field, I&apos;m
+          eager to explore new technologies, enhance my skills, and contribute
+          to innovative projects that make a difference.
         </p>
       </div>
     </section>
