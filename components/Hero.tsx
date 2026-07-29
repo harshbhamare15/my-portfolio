@@ -29,15 +29,21 @@ export default function Hero() {
       <div>
         <h2 className="text-xl font-bold text-black mt-10 mb-2">About</h2>
         <p className="text-base text-gray-600 leading-relaxed">
-          I am a fresher, A passionate Frontend Developer and a second-year
-          engineering student. I have completed my journey in frontend
-          development, mastering JavaScript and modern frameworks like{" "}
+          I am a fresher, a passionate{" "}
+          <span className="bg-yellow-100 text-black font-medium px-1 rounded">
+            Frontend Developer
+          </span>{" "}
+          and a third-year engineering student. I have completed my journey in
+          frontend development, mastering JavaScript and modern frameworks like{" "}
           <span className="text-black underline">React.js and Next.js</span>{" "}for
-          building dynamic and responsive web applications. I&apos;m deeply
-          enthusiastic about technology and its power to create impactful
-          digital experiences. As I continue to grow in this field, I&apos;m
-          eager to explore new technologies, enhance my skills, and contribute
-          to innovative projects that make a difference.
+          building dynamic and responsive web applications. I&apos;m also
+          currently learning{" "}
+          <span className="text-black underline">Android development</span>,
+          expanding my skills beyond the web into mobile app development.
+          I&apos;m deeply enthusiastic about technology and its power to create
+          impactful digital experiences. As I continue to grow in this field,
+          I&apos;m eager to explore new technologies, enhance my skills, and
+          contribute to innovative projects that make a difference.
         </p>
       </div>
     </section>

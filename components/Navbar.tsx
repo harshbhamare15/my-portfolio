@@ -46,11 +46,14 @@ export default function Navbar() {
       {/* Home */}
       <a
         href="/"
-        className={`hover:scale-110 transition-transform ${
+        className={`group relative hover:scale-110 transition-transform ${
           activeSection === "hero" ? "text-black" : "text-gray-400"
         }`}
       >
         <Home className="w-5 h-5" />
+        <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 text-xs font-medium text-black bg-white rounded-md shadow-md border border-gray-100 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+          Home
+        </span>
       </a>
 
       <div className="w-[1px] h-5 bg-gray-300" />
@@ -60,9 +63,12 @@ export default function Navbar() {
         href="https://www.linkedin.com/in/harshbhamare15/"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:scale-110 transition-transform text-black"
+        className="group relative hover:scale-110 transition-transform text-black"
       >
         <Linkedin className="w-5 h-5" />
+        <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 text-xs font-medium text-black bg-white rounded-md shadow-md border border-gray-100 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+          LinkedIn
+        </span>
       </a>
 
       <div className="w-[1px] h-5 bg-gray-300" />
@@ -72,9 +78,12 @@ export default function Navbar() {
         href="https://x.com/harsh_bhamare15"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:scale-110 transition-transform text-black"
+        className="group relative hover:scale-110 transition-transform text-black"
       >
         <Twitter className="w-5 h-5" />
+        <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 text-xs font-medium text-black bg-white rounded-md shadow-md border border-gray-100 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+          Twitter
+        </span>
       </a>
 
       <div className="w-[1px] h-5 bg-gray-300" />
@@ -84,9 +93,12 @@ export default function Navbar() {
         href="https://www.instagram.com/harsh_bhamare15_/"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:scale-110 transition-transform text-black"
+        className="group relative hover:scale-110 transition-transform text-black"
       >
         <Instagram className="w-5 h-5" />
+        <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 text-xs font-medium text-black bg-white rounded-md shadow-md border border-gray-100 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+          Instagram
+        </span>
       </a>
 
       <div className="w-[1px] h-5 bg-gray-300" />
@@ -96,9 +108,12 @@ export default function Navbar() {
         href="https://github.com/harshbhamare15"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:scale-110 transition-transform text-black"
+        className="group relative hover:scale-110 transition-transform text-black"
       >
         <Github className="w-5 h-5" />
+        <span className="absolute -top-10 left-1/2 -translate-x-1/2 px-2.5 py-1 text-xs font-medium text-black bg-white rounded-md shadow-md border border-gray-100 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+          GitHub
+        </span>
       </a>
     </nav>
   );
