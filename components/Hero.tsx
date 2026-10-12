@@ -29,21 +29,25 @@ export default function Hero() {
       <div>
         <h2 className="text-xl font-bold text-black mt-10 mb-2">About</h2>
         <p className="text-base text-gray-600 leading-relaxed">
-          I am a fresher, a passionate{" "}
+          I’m a passionate{" "}
           <span className="bg-yellow-100 text-black font-medium px-1 rounded">
             Frontend Developer
-          </span>{" "}
-          and a third-year engineering student. I have completed my journey in
-          frontend development, mastering JavaScript and modern frameworks like{" "}
-          <span className="text-black underline">React.js and Next.js</span>{" "}for
-          building dynamic and responsive web applications. I&apos;m also
-          currently learning{" "}
-          <span className="text-black underline">Android development</span>,
-          expanding my skills beyond the web into mobile app development.
-          I&apos;m deeply enthusiastic about technology and its power to create
-          impactful digital experiences. As I continue to grow in this field,
-          I&apos;m eager to explore new technologies, enhance my skills, and
-          contribute to innovative projects that make a difference.
+          </span>
+          , <span className="text-black underline">Co-Founder of Amrivana</span>
+          , and a third-year Computer Science Engineering student. I specialize
+          in building dynamic, responsive, and user-friendly web applications
+          using TypeScript and modern frameworks like{" "}
+          <span className="text-black underline">React.js and Next.js</span>. As
+          the Co-Founder of Amrivana, I’m working towards building impactful
+          digital solutions that simplify healthcare experiences. This
+          entrepreneurial journey allows me to combine my technical skills with
+          innovation and problem-solving to create meaningful products. I’m also
+          exploring{" "}
+          <span className="text-black underline">Android development</span> to
+          expand my expertise beyond the web into mobile app development.
+          Passionate about technology and continuous learning, I’m always eager
+          to explore new technologies, enhance my skills, and contribute to
+          innovative projects that make a difference.
         </p>
       </div>
     </section>
